@@ -1,10 +1,99 @@
-html<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>My First Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DUN DIVING</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: white;
+      display: flex;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 700px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      text-align: center;
+      color: #aaa;
+      margin-bottom: 40px;
+    }
+
+    .track {
+      background: #1d1d1d;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .track h2 {
+      margin-top: 0;
+      font-size: 1.2rem;
+    }
+
+    audio {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+  </style>
 </head>
 <body>
-    <h1>Hello World!V2</h1>
-    <p>Successfully deployed via Cloudflare Pages!</p>
-</body>
-</html>
+
+  <div class="container">
+
+    <h1>dun diver</h1>
+    <p>songs . . .</p>
+
+    <!-- TRACK 1 -->
+    <div class="track">
+      <h2>Track One</h2>
+      <audio controls>
+        <source src="music/song1.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+      </audio>
+    </div>
+
+    <!-- TRACK 2 -->
+    <div class="track">
+      <h2>Track Two</h2>
+      <audio controls>
+        <source src="music/song2.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+      </audio>
+    </div>
+
+    <!-- TRACK 3 -->
+    <div class="track">
+      <h2>Track Three</h2>
+      <audio controls>
+        <source src="music/song3.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+      </audio>
+    </div>
+
+    <div class="footer">
+      © 2026 Dun Diver
+    </div>
