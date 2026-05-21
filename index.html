@@ -3,59 +3,124 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>The Futuristic Past</title>
 
+  <!-- Weird but elegant font -->
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;500;700&display=swap" rel="stylesheet">
+
   <style>
-    body {
+
+    * {
       margin: 0;
-      background: #0d0d0d;
-      color: white;
-      font-family: Arial, sans-serif;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #090909;
+      color: #f1f1f1;
+      font-family: 'Unbounded', sans-serif;
+      min-height: 100vh;
+
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+
+      padding: 40px;
     }
 
     .container {
-      width: 90%;
-      max-width: 600px;
-      background: #1a1a1a;
+      width: 100%;
+      max-width: 700px;
+
+      background: rgba(20,20,20,0.95);
+
+      border: 1px solid rgba(255,255,255,0.06);
+
+      border-radius: 24px;
+
       padding: 40px;
-      border-radius: 20px;
-      box-shadow: 0 0 30px rgba(0,0,0,0.5);
-      text-align: center;
+
+      box-shadow:
+      0 0 40px rgba(0,0,0,0.7),
+      0 0 120px rgba(255,255,255,0.03);
+
+      backdrop-filter: blur(10px);
+    }
+
+    .cover-image {
+      width: 100%;
+      border-radius: 18px;
+      margin-bottom: 30px;
+
+      object-fit: cover;
+
+      filter:
+      brightness(0.85)
+      contrast(1.1)
+      grayscale(0.1);
     }
 
     h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+
+      line-height: 1.1;
+
       margin-bottom: 10px;
-      font-size: 2.5rem;
+
+      letter-spacing: -2px;
     }
 
-    p {
-      color: #888;
-      margin-bottom: 30px;
+    .subtitle {
+      color: #7d7d7d;
+
+      font-size: 0.9rem;
+
+      margin-bottom: 40px;
+
+      text-transform: uppercase;
+
+      letter-spacing: 3px;
     }
 
     .track {
-      background: #262626;
-      padding: 20px;
-      border-radius: 12px;
+      background: #121212;
+
+      border: 1px solid rgba(255,255,255,0.05);
+
+      border-radius: 18px;
+
+      padding: 25px;
     }
 
-    .track-title {
-      margin-bottom: 15px;
-      font-size: 1.2rem;
+    .track-name {
+      font-size: 1.1rem;
+
+      margin-bottom: 20px;
+
+      color: #d7d7d7;
     }
 
     audio {
       width: 100%;
+
+      filter:
+      contrast(1.1)
+      brightness(0.95);
     }
 
     footer {
-      margin-top: 30px;
-      color: #666;
-      font-size: 0.9rem;
+      margin-top: 40px;
+
+      text-align: center;
+
+      color: #555;
+
+      font-size: 0.75rem;
+
+      letter-spacing: 2px;
     }
 
   </style>
@@ -64,24 +129,40 @@
 
   <div class="container">
 
-    <h1>The Futuristic Past</h1>
-    <p>Experimental audio archive</p>
+    <!-- IMAGE -->
+    <!-- Upload cover.jpg to your R2 bucket -->
+    <img
+      class="cover-image"
+      src="https://pub-e85f3fbecc584393b0a9f4319f484c43.r2.dev/cover.jpg"
+      alt="Cover Art"
+    >
+
+    <h1>
+      THE FUTURISTIC PAST
+    </h1>
+
+    <div class="subtitle">
+      before my death:
+    </div>
 
     <div class="track">
 
-      <div class="track-title">
-        mes
+      <div class="track-name">
+        mesrev
       </div>
 
       <audio controls controlsList="nodownload">
-        <source src="https://pub-e85f3fbecc584393b0a9f4319f484c43.r2.dev/mesrev.mp3" type="audio/mpeg">
+        <source
+          src="https://pub-e85f3fbecc584393b0a9f4319f484c43.r2.dev/mesrev.mp3"
+          type="audio/mpeg"
+        >
         Your browser does not support audio playback.
       </audio>
 
     </div>
 
     <footer>
-      © 2026 The Futuristic Past
+      © 2026 — THE FUTURISTIC PAST
     </footer>
 
   </div>
