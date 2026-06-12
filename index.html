@@ -193,27 +193,27 @@
     }
 
     .subtitle {
-      font-size: 0.7rem;
+      font-size: 0.8rem;
 
       text-align: center;
 
       letter-spacing: 2px;
 
-      margin-bottom: 30px;
+      margin-bottom: 18px;
     }
 
     .track {
-      padding: 22px;
+      padding: 20px;
 
       border-radius: 20px;
     }
     
     .track-name {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
 
       text-align: center;
 
-      margin-bottom: 14px;
+      margin-bottom: 12px;
     }
     .playlist-controls {
   display: flex;
@@ -223,22 +223,35 @@
 }
 
 .playlist-controls button {
-  background: #f1f1f1;
-  color: #111;
+  background: #111;
+  color: #f1f1f1;
 
-  border: 1px solid #000;
+  border: 1px solid rgba(255,255,255,0.15);
 
-  border-radius: 12px;
+  border-radius: 10px;
 
-  padding: 16px 32px;
-  
-  cursor: pointer;
+  padding: 14px 28px;
+
+  font-size: 1.3rem;
+
+  font-weight: bold;
 
   font-family: inherit;
+
+  cursor: pointer;
 }
 
 .playlist-controls button:hover {
+  background: #1a1a1a;
+}
+
+.playlist-controls button:active {
   background: #222;
+}
+
+.playlist-controls button:focus,
+.playlist-controls button:focus-visible {
+  outline: none;
 }
     audio {
       width: 100%;
